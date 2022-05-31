@@ -1,0 +1,148 @@
+@font-face {
+  font-family:"Raleway";
+  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family:"Rubik" ;
+  src: url(/fonts/rubik/rubik-700.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family:"Rubik" ;
+  src: url(/fonts/rubik/rubik-400.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+body{
+ font-family: "Ribik",sans-serif;
+ font-size: 18px;
+ line-height: 30px;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.title,.subscription-button  {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+li:not(.about-list) {
+  list-style-type: none;
+}
+/* h2{
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+} */
+.page-header {
+  background: #FFE17F;
+}
+.navigation-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+}
+.navigation-user-link {
+  font-family: "Ribik";
+ font-size: 18px;
+ line-height: 30px;
+ text-decoration: none;
+ color: #000000;
+}
+.category-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+
+}
+.category-icon {
+  background: #FFE17F;
+}
+
+
+.cite-description {
+ font-family: "Ribik";
+ font-size: 18px;
+ line-height: 30px;
+ color:#444444
+}
+.cite-characteristic-number{
+  font-size: 36px;
+  color: #000000
+  ;
+}
+.cite-characteristic-text {
+  font-size: 16px;
+  color:#444444
+}
+.text-content {
+  color:#444444
+}
+.delivery-for-order-title {
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* styles from catalog */
+.product-card-link{
+  height: 20px;
+  color: #444444;
+}
+/*  end catalog styles */
+footer {
+  background: #444444;
+}
+.footer-menu-list a {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.contacts-subtitle {
+  font-family: "Ribik";
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.footer-text,.footer-contacts-phone {
+  font-family: "Ribik";
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+address {
+  font-style: normal
+}
