@@ -7,14 +7,14 @@
 }
 @font-face {
   font-family:"Rubik" ;
-  src: url(/fonts/rubik/rubik-700.woff2) format("woff2");
+  src: url(fonts/rubik/rubik-700.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family:"Rubik" ;
-  src: url(/fonts/rubik/rubik-400.woff2) format("woff2");
+  src: url(fonts/rubik/rubik-400.woff2) format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -23,8 +23,12 @@ body{
  font-family: "Ribik",sans-serif;
  font-size: 18px;
  line-height: 30px;
+ font-weight: 400;
+ text-align: start;
+ /* весь текст кроме button и цены в рублях catalog */
+ color: #000000;
+ background-color: #ffffff;
 }
-
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -36,67 +40,62 @@ body{
   text-decoration: none;
   text-transform: uppercase;
 }
+.page-header {
+  background: #FFE17F;
+  color: #000000;
+}
+
+
+.navigation-link {
+  font-family: "Raleway",sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+
+
+}
+.navigation-user-link {
+  font-family: "Ribik",sans-serif;
+ line-height: 30px;
+ text-decoration: none;
+ color: inherit;
+}
+.category-link {
+  font-family: "Raleway",sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 800;
+}
 
 .title,.subscription-button  {
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
-li:not(.about-list) {
-  list-style-type: none;
-}
-/* h2{
-  font-family: "Raleway";
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
 
-} */
-.page-header {
-  background: #FFE17F;
-}
-.navigation-link {
-  font-family: "Raleway";
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
 
-}
-.navigation-user-link {
-  font-family: "Ribik";
- font-size: 18px;
- line-height: 30px;
- text-decoration: none;
- color: #000000;
-}
-.category-link {
-  font-family: "Raleway";
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #000000;
 
-}
+
 .category-icon {
   background: #FFE17F;
 }
 
 
 .cite-description {
- font-family: "Ribik";
- font-size: 18px;
+
  line-height: 30px;
  color:#444444
 }
 .cite-characteristic-number{
   font-size: 36px;
-  color: #000000
-  ;
+  color: #000000;
 }
 .cite-characteristic-text {
   font-size: 16px;
@@ -105,24 +104,52 @@ li:not(.about-list) {
 .text-content {
   color:#444444
 }
+.delivery-garanty-credit-list {
+  background-color: #F0F0F0;
+}
+.delivery-for-order{
+  background-color: #F0F0F0;
+}
 .delivery-for-order-title {
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 800;
   text-transform: uppercase;
   text-align: center;
 }
+
 /* styles from catalog */
 .product-card-link{
   height: 20px;
   color: #444444;
 }
+.catalog-products{
+  background-color: #F0F0F0;
+}
+.product-list {
+  background-color: #ffffff;
+}
 /*  end catalog styles */
+
+.about-item {
+
+ color: #FFE17F;
+}
+.marker-black {
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.subscription {
+  background-color:#F0F0F0 ;
+}
 footer {
   background: #444444;
 }
 .footer-menu-list a {
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
@@ -135,14 +162,17 @@ footer {
   line-height: 30px;
   color: #444444;
 }
+.contacts-phone{
+  color: #000000;
+  text-decoration: underline;
 
+}
 .footer-text,.footer-contacts-phone {
-  font-family: "Ribik";
-  font-size: 16px;
+  font-family: "Ribik",sans-serif;
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
 }
-address {
+address  {
   font-style: normal
 }

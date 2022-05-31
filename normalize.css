@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  text-decoration: none;
 }
 
 /**
@@ -76,6 +77,10 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+}
+
+li:not(.about-item) {
+  list-style-type: none;
 }
 
 /**
