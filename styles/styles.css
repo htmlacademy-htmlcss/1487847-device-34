@@ -20,7 +20,7 @@
   font-display: swap;
 }
 body{
- font-family: "Ribik",sans-serif;
+ font-family: "Rubik",sans-serif;
  font-size: 18px;
  line-height: 30px;
  font-weight: 400;
@@ -48,6 +48,9 @@ body li {
   text-transform: uppercase;
   border: none;
 }
+.visually-hidden {
+  display: none;
+}
 .page-header {
   background: #FFE17F;
   color: #000000;
@@ -63,9 +66,21 @@ body li {
   color: inherit;
 }
 .navigation-user-link {
-  font-family: "Ribik",sans-serif;
- line-height: 30px;
  color: inherit;
+ border: none;
+ background-color: #FFE17F;
+}
+.search-header {
+  border: solid ;
+  border-radius: 25px;
+  width: 517px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.search-header input{
+border:none;
+background: #FFE17F;
 }
 /* header style end */
 
@@ -104,6 +119,7 @@ body li {
 .text-content {
   color:#444444
 }
+
 .delivery-garanty-credit-list {
   background-color: #F0F0F0;
 }
@@ -118,6 +134,13 @@ body li {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
+}
+.footer-menu-list {
+  font-family: "Raleway",sans-serif;
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: 800;
+  letter-spacing: .2em;
 }
 
 
@@ -175,8 +198,13 @@ body li {
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
+  padding: 0;
+  margin: 0;
   letter-spacing: .2em;
   text-transform: uppercase;
+  border: solid #E5E5E5 3px ;
+  background: #ffffff;
+  cursor: pointer;
 }
 /*  end catalog styles */
 
@@ -195,6 +223,17 @@ body li {
 .subscription {
   background-color:#F0F0F0 ;
 }
+.subscription-button {
+  font-family: "Raleway",sans-serif;
+  font-size: 16px;
+  line-height: 21.13px;
+  font-weight: 800;
+  letter-spacing: .2em;
+  text-align: center;
+  border: none;
+
+  text-transform: uppercase;
+}
 /* footer style */
 footer {
   background: #444444;
@@ -207,9 +246,10 @@ footer {
   color: #ffffff;
 }
 .contacts-subtitle {
-  font-family: "Ribik";
+  font-family: "Rubik";
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   color: #444444;
 }
 .contacts-phone{
@@ -218,7 +258,7 @@ footer {
 
 }
 .footer-text,.footer-contacts-phone {
-  font-family: "Ribik",sans-serif;
+  font-family: "Rubik",sans-serif;
   line-height: 20px;
   color: #ffffff;
 }
