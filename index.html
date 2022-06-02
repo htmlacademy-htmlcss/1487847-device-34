@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/normalize.css" />
   </head>
   <body>
     <header class="page-header">
@@ -31,13 +33,31 @@
       </ul>
       <ul class="navigation-user-list navigation-user">
         <li class="navigation-user-item">
-          <button class="navigation-user-link" href="#">Войти</button>
+          <button class="navigation-user-link" href="#">
+            <img
+              src="/images/icons-images/icons-user.svg"
+              width="15"
+              height="9"
+            />Войти
+          </button>
         </li>
         <li class="navigation-user-item">
-          <button class="navigation-user-link" href="#">Сравнить</button>
+          <button class="navigation-user-link" href="#">
+            <img
+              src="/images/icons-images/icons-praph.svg"
+              width="10"
+              height="12"
+            />Сравнить
+          </button>
         </li>
         <li class="navigation-user-item">
-          <button class="navigation-user-link" href="#">Корзина</button>
+          <button class="navigation-user-link" href="#">
+            <img
+              src="/images/icons-images/icons-bag.svg"
+              width="16"
+              height="14"
+            />Корзина
+          </button>
         </li>
       </ul>
       <nav class="navigation-header">
@@ -122,7 +142,9 @@
               width="560"
               height="560"
             />
-            <q class="cite-title">Порхает как бабочка, жалит как пчела!</q>
+            <q class="title cite-title"
+              >Порхает как бабочка, жалит как пчела!</q
+            >
             <p class="cite-description">
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
               лазером, замаскированным под стандартную камеру.
@@ -131,19 +153,19 @@
             <h2 class="visually-hidden">Характеристики товара</h2>
             <ul class="cite-list">
               <li class="cite-item">
-                <p class="cite-description">800 m</p>
+                <p class="cite-characteristic-number">800 м</p>
               </li>
               <li class="cite-item">
-                <p class="cite-description">Дальность полета</p>
+                <p class="cite-characteristic-text">Дальность полета</p>
               </li>
             </ul>
 
             <ul class="cite-list">
               <li class="cite-item">
-                <p class="cite-description">50 м</p>
+                <p class="cite-characteristic-number">50 м</p>
               </li>
               <li class="cite-item">
-                <p class="cite-description">Радиус поражения</p>
+                <p class="cite-characteristic-text">Радиус поражения</p>
               </li>
             </ul>
           </li>
@@ -155,7 +177,7 @@
           <a class="category-link" href="catalog/vr.html">
             <img
               class="category-product-img"
-              src="images/vr.svg"
+              src="images/icons-category/vr.svg"
               alt="Виртуальная реальность"
               width="96.95"
               height="54.99"
@@ -168,7 +190,7 @@
           <a class="category-link" href="catalog/monopod.html">
             <img
               class="category-product-img"
-              src="images/monopod.svg"
+              src="images/icons-category/monopod.svg"
               alt="Монопод"
               width="85.87"
               height="117"
@@ -181,7 +203,7 @@
           <a class="category-link" href="catalog/action-camera.html">
             <img
               class="category-product-img"
-              src="images/action-camera.svg"
+              src="images/icons-category/action-camera.svg"
               alt="Экшн-камеры"
               width="71.02"
               height="87"
@@ -194,7 +216,7 @@
           <a class="category-link" href="catalog/fitnes-braslet.html">
             <img
               class="category-product-img"
-              src="images/fitnes-braslet.svg"
+              src="images/icons-category/fitnes-braslet.svg"
               alt="Фитнес-браслеты"
               width="107.31"
               height="64.99"
@@ -207,7 +229,7 @@
           <a class="category-link" href="catalog/smart-watch.html">
             <img
               class="category-product-img"
-              src="images/smart-watch.svg"
+              src="images/icons-category/smart-watch.svg"
               alt="Умные часы"
               width="56.01"
               height="97.98"
@@ -220,7 +242,7 @@
           <a class="category-link" href="catalog/quadcopter.html">
             <img
               class="category-product-img"
-              src="images/quadcopter.svg"
+              src="images/icons-category/quadcopter.svg"
               alt="квадрокоптеры"
               width="132.03"
               height="69.01"
@@ -229,6 +251,7 @@
           </a>
         </div>
       </section>
+
       <section class="delivery-garanty-credit-list">
         <h2 class="visually-hidden">
           Информация про доставку, гарантию и кредиты
@@ -245,8 +268,8 @@
           </li>
         </ul>
         <div class="tab-content">
-          <h2 class="tab-title">Доставка</h2>
-          <p class="tab-content">
+          <h2 class="title tab-title">Доставка</h2>
+          <p class="text-content tab-content">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
             ваш этаж.
@@ -260,11 +283,12 @@
           />
         </div>
       </section>
+
       <section class="delivery-for-order">
         <h2 class="visually-hidden">Доставка</h2>
         <a href="delivery-button-icon">
           <img
-            src="images/delivery-button-icon.svg"
+            src="images/icons-images/icons-delivery-button.svg"
             alt="Машина доставки"
             width="47"
             height="31"
@@ -273,16 +297,17 @@
         <p class="delivery-for-order-title">Доставим редкий товар под заказ</p>
         <a class="icon-info">
           <img
-            src="images/delivery-button-icon-info.svg"
+            src="images/icons-images/icons-delivery-button-info.svg"
             alt="Доставка инфо"
             width="40"
             height="40"
           />
         </a>
       </section>
+
       <section class="about">
-        <h2 class="about-title">О нас</h2>
-        <p class="about-description">
+        <h2 class="title about-title">О нас</h2>
+        <p class="text-content about-description">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.
         </p>
@@ -291,16 +316,23 @@
           транспортными компаниями:
         </p>
         <ul class="about-list">
-          <li class="about-item"><strong>Меловые линии</strong></li>
-          <li class="about-item"><strong>СДИК</strong></li>
-          <li class="about-item"><strong>ТоксБерри</strong></li>
+          <!-- использование span не очень красиво, возможно  по другому  -->
+          <li class="about-item">
+            <span class="marker-black"><strong>Меловые линии</strong></span>
+          </li>
+          <li class="about-item">
+            <span class="marker-black"><strong>СДИК</strong></span>
+          </li>
+          <li class="about-item">
+            <span class="marker-black"><strong>ТоксБерри</strong></span>
+          </li>
         </ul>
-        <a class="button-link link-about" href="#">ПОДРОБНЕЕ О НАС</a>
+        <a class="button-link link-about" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
-        <h2 class="contact-title">Контакты</h2>
-        <p class="contact-description">
+        <h2 class="title contact-title">Контакты</h2>
+        <p class="text-content contact-description">
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
@@ -316,14 +348,18 @@
 
         <h3 class="contacts-subtitle">Время работы</h3>
         <ul class="contacts-shedule">
-          <li class="contacts-shedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="contacts-shedule-item">сб—вс: с 10:00 до 19:00</li>
+          <li class="text-content contacts-shedule-item">
+            пн—пт: с 10:00 до 22:00
+          </li>
+          <li class="text-content contacts-shedule-item">
+            сб—вс: с 10:00 до 19:00
+          </li>
         </ul>
-        <a class="button-link link-contacts" href="#">НАПИШИТЕ НАМ</a>
+        <a class="button-link link-contacts" href="#">Напишите нам</a>
       </section>
       <section class="subscription">
         <h2 class="form-subscription-title">Подпишитесь на рассылку</h2>
-        <p class="form-subscription-text">
+        <p class="text-content form-subscription-text">
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
@@ -341,11 +377,11 @@
             placeholder="Ваш e-mail"
           />
 
-          <button class="subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
+          <button class="subscription-button" type="submit">Подписаться</button>
         </form>
         <img
           class="icon-assept"
-          src="images/icon-assept.svg"
+          src="images/icons-images/icons-assept.svg"
           alt="Галочка"
           width="16"
           height="16"
@@ -381,7 +417,7 @@
           <li class="footer-social-item">
             <a class="social-button" href="https://t.me/htmlacademy"
               ><img
-                src="images/footer-icons-telegram.svg"
+                src="images/icons-images/icons-footer-telegram.svg"
                 alt="лого телеграм"
                 width="14"
                 height="12"
@@ -395,7 +431,7 @@
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <img
-                src="images/footer-icons-youtube.svg"
+                src="images/icons-images/icons-footer-youtube.svg"
                 alt="лого youtube"
                 width="16"
                 height="10.67"
@@ -406,7 +442,7 @@
           <li class="footer-social-item">
             <a class="social-button" href="https://twitter.com/htmlacademy_ru"
               ><img
-                src="images/footer-icons-twitter.svg"
+                src="images/icons-images/icons-footer-twitter.svg"
                 alt="лого твитер"
                 width="15"
                 height="14"
@@ -425,7 +461,7 @@
         <a href="https://htmlacademy.ru/"
           ><img
             class="html-logo"
-            src="images/htmlacademy-logo.svg"
+            src="images/logo-htmlacademy.svg"
             alt="лого HTML Academy"
             width="115"
             height="33"
