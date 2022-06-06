@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <h2 class="visually-hidden">Интернет-магазин Device</h2>
-      <a href="index.html">
+    <header class="page-header content-wrapper">
+      <h1 class="visually-hidden">Интернет-магазин Device</h1>
+      <div class="header-logo-black"><a href="index.html">
         <img
           src="images/logo-black.svg"
           alt="Лого Девайс"
           width="145"
-          height="36"
-        />
+          height="36">
       </a>
-      <ul class="navigation-list">
+    </div>
+      <nav class="navigation-header-user">
+      <ul class="search-navigation-list">
         <li class="navigation-item">
           <p class="search-header">
             <label for="search-catalog"></label>
@@ -30,50 +31,51 @@
           </p>
         </li>
       </ul>
-      <nav class="navigation-header">
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"
-              ><img
-                src="/images/icons-images/icons-user.svg"
-                width="15"
-                height="9"
-              />Коля Петухов</a
-            >
-          </li>
-          <li class="navigation-user-item">
-            <a
-              class="navigation-user-link navigation-user-link-curret"
-              href="#"
-            >
-              Выйти
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"
-              ><img
-                src="/images/icons-images/icons-praph.svg"
-                width="10"
-                height="12"
-              />Сравнить</a
-            >
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"
-              ><img
-                src="/images/icons-images/icons-bag.svg"
-                width="16"
-                height="14"
-              />Корзина</a
-            >
-          </li>
-        </ul>
+      <ul class="navigation-user-list navigation-user">
+        <li class="navigation-user-item">
+          <button class="navigation-user-link" href="#">
+            <img
+              src="images/icons-images/icons-user.svg"
+              width="15"
+              height="9"
+            />Войти
+          </button>
+        </li>
+        <li class="navigation-user-item">
+          <a
+            class="navigation-user-link navigation-user-link-curret"
+            href="#"
+          >
+            Выйти
+          </a>
+        </li>
+        <li class="navigation-user-item">
+          <button class="navigation-user-link" href="#">
+            <img
+              src="images/icons-images/icons-praph.svg"
+              width="10"
+              height="12"
+            />Сравнить
+          </button>
+        </li>
+        <li class="navigation-user-item">
+          <button class="navigation-user-link" href="#">
+            <img
+              src="images/icons-images/icons-bag.svg"
+              width="16"
+              height="14"
+            />Корзина
+          </button>
+        </li>
+      </ul>
+    </nav>
+      <nav class="navigation-header-catalog">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"
-              ><img src="images/plus.svg" width="50" height="50" />Каталог
-              товаров</a
-            >
+            <a class="navigation-link catalog-link" href="catalog.html"
+              ><img src="images/plus.svg" width="50" height="50" /> Каталог
+              товаров
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="delivery.html">Доставка</a>
@@ -89,7 +91,8 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h1 class="title inner-header-title">Каталог моноподов для селфи</h1>
+        <div class="breadcrumps-container">
+        <h1 class="title inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumps-list">
           <li class="breadcrumps-item">
             <a href="index.html">Главная</a>
@@ -99,7 +102,9 @@
           </li>
           <li class="breadcrumps-item"><a href="##">Моноподы для селфи</a></li>
         </ul>
+      </div>
         <section class="catalog-products">
+          <div class="catalog-products-container">
           <h2 class="visually-hidden">Каталог продукции с фильтрами</h2>
           <div class="catalog-filter">
             <h3 class="text-filter">ФИЛЬТР:</h3>
@@ -196,6 +201,7 @@
               <button class="button" type="submit">Показать</button>
             </form>
           </div>
+          <div class="catalog-container">
           <div class="sorting-block">
             <h3 class="text-filter">СОРТИРОВКА:</h3>
             <select class="select-control" aria-label="Сортировка">
@@ -310,28 +316,30 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
         </section>
       </header>
     </main>
     <footer class="page-footer">
-      <section class="footer-address">
-        <h3 class="visually-hidden">Контакты</h3>
-        <a class="logo-device-link" href="index.html">
-          <img
+      <div class="page-footer-container">
+      <section class="footer-adress">
+        <h2 class="visually-hidden">контакты</h2>
+
+        <a class="logo-device-link" href="##"
+          ><img
             class="logo-device-yellow"
             src="images/logo-device-yellow.svg"
             alt="логотип девайс"
             width="145"
             height="36"
-          />
-        </a>
-        <address class="footer-text">
+        /></a>
+        <adress class="footer-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </address>
+        </adress>
       </section>
-
       <section class="footer-links">
-        <h3 class="visually-hidden">Ссылки на социальные сети</h3>
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="footer-menu-list">
           <li class="footer-delivery"><a href="#">Доставка</a></li>
           <li class="footer-garanty"><a href="#">Гарантия</a></li>
@@ -376,8 +384,9 @@
           </li>
         </ul>
       </section>
+
       <section class="phone-logo">
-        <h3 class="visually-hidden">Номера телефонов</h3>
+        <h2 class="visually-hidden">Номера телефонов</h2>
         <a class="footer-contacts-phone" href="tel:88128121212"
           >+7 (812) 812-12-12</a
         >
@@ -391,6 +400,7 @@
           />
         </a>
       </section>
+    </div>
     </footer>
   </body>
 </html>
