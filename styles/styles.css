@@ -99,8 +99,7 @@ body {
 
 .page-header {
   display: flex;
-  /* width: 1160px; */
-  /* margin: 0 auto; */
+  padding: 0 36px;
   flex-direction: column;
   background: #FFE17F;
   color: #000000;
@@ -258,7 +257,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 40px;
   width: 1160px;
   margin: 70px auto;
 }
@@ -322,6 +321,7 @@ body {
 
 .slider-list {
   list-style: none;
+  max-width: 560px;
 }
 
 .category-icon {
@@ -333,7 +333,7 @@ body {
   align-items: center;
   background-color: #FFE17F;
   width: 100%;
-  height: 160px;
+  min-height: 160px;
 }
 
 .category-text {
@@ -383,19 +383,21 @@ body {
 
 .delivery-garanty-credit-list {
   background-color: #F0F0F0;
+  min-width: 1232px;
 }
 
 .container-delivery-garanty-credit-list {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  padding: 0 36px;
 }
 
 .tab-list {
   margin: 0;
   padding: 0;
   width: 290px;
-  height: 320px;
+  min-height: 320px;
   list-style: none;
 
 }
@@ -418,7 +420,7 @@ body {
   align-items: center;
   background-color: #F0F0F0;
   width: 1160px;
-  height: 100px;
+  min-height: 100px;
   margin: 70px auto;
 }
 
@@ -428,7 +430,7 @@ body {
   justify-content: center;
   background-color: #FFE17F;
   width: 125px;
-  height: 100%;
+  min-height: 100px;
 }
 
 .delivery-for-order-title {
@@ -462,6 +464,7 @@ body {
 
 .footer-menu-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 35px;
   padding: 0;
@@ -477,10 +480,7 @@ body {
   text-decoration: none;
 }
 
-.footer-social-list {
-  padding: 0;
 
-}
 
 
 /* styles from catalog */
@@ -495,6 +495,7 @@ body {
 
 .breadcrumps-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 36px;
   margin: 0;
   padding: 0;
@@ -510,7 +511,7 @@ body {
 .sorting-block {
   display: flex;
   margin: 0;
-  height: 70px;
+  min-height: 70px;
   align-items: center;
   background-color: #F0F0F0;
 }
@@ -569,24 +570,43 @@ body {
 }
 
 .product-card-link {
-  size: 18px;
-  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  max-width: 210px;
+  margin: 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .product-list {
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 360px 360px;
+  grid-template-columns: repeat(2, 360px);
   gap: 40px;
   list-style: none;
   padding: 70px 40px;
+  margin: 0;
 }
 
+/* .product-card-title {
+  width: 230px;
+  margin: 0;
+} */
+
 .product-card-price {
-  text-align: end;
+  max-width: 100px;
   color: #444444;
   line-height: 21px;
 }
@@ -603,10 +623,12 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 15px;
+
 }
 
 .pagination-next,
@@ -628,6 +650,7 @@ body {
   border: none;
   color: #000000;
   margin: 0 40px;
+  background-color: transparent;
 }
 
 .pagination-item {
@@ -647,7 +670,7 @@ body {
 .download-more {
   display: block;
   width: 760px;
-  height: 40px;
+  min-height: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -677,6 +700,7 @@ body {
 
 .subscription {
   background-color: #F0F0F0;
+  min-width: 1232px;
 }
 
 .subscription-conteiner {
@@ -684,6 +708,7 @@ body {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
+  padding: 0 36px;
 }
 
 .subscription-title {
@@ -713,6 +738,7 @@ body {
   color: #C4C4C4;
 
 }
+
 /* НЕ РАБОТАЕТ  */
 
 .form-subscription input {
@@ -763,16 +789,16 @@ body {
 }
 
 /* footer style */
-footer {
+.page-footer {
   background: #444444;
+  min-width: 1232px;
 }
 
 .page-footer-container {
   display: flex;
   margin: 0 auto;
   width: 1160px;
-  padding-top: 45px;
-  padding-bottom: 60px;
+  padding: 45px 36px 60px;
   justify-content: space-between;
 }
 
@@ -831,17 +857,22 @@ footer {
 .footer-social-list {
   display: flex;
   gap: 35px;
-
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-social-item {
+  border-radius: 50%;
+  background-color: #FFFFFF4D;
+}
+
+.social-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #FFFFFF4D;
+  min-height: 40px;
 }
 
 .footer-social-item img {
