@@ -91,8 +91,8 @@
       </div>
     </header>
 
-    <main class="main-conteiner main-index">
-      <div class="page-conteiner">
+    <main class="main-container main-index">
+      <div class="page-container">
         <section class="advantage-carousel content-wrapper">
           <div class="carousel">
             <h2 class="visually-hidden">Примеры продукции.</h2>
@@ -289,7 +289,7 @@
           </div>
         </section>
 
-        <section class="delivery-garanty-credit-list">
+        <section class="container-width-background">
           <div class="container-delivery-garanty-credit-list">
             <h2 class="visually-hidden">
               Информация про доставку, гарантию и кредиты.
@@ -403,7 +403,7 @@
           </section>
         </div>
         <section class="subscription">
-          <div class="subscription-conteiner">
+          <div class="subscription-container">
             <div class="subscription-title">
               <h2 class="form-subscription-title title">
                 Подпишитесь на рассылку
@@ -421,13 +421,12 @@
                 method="post"
               >
                 <label for="newsletter-email"></label>
-                <input
+                <input class="input-form-subscription"
                   type="email"
                   id="newsletter-email"
                   name="newsletter-email"
                   placeholder="Ваш e-mail"
                 />
-
                 <button class="subscription-button" type="submit">
                   Подписаться
                 </button>
@@ -446,12 +445,10 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="container-footer">
       <div class="page-footer-container">
-        <section class="footer-address">
-          <h2 class="visually-hidden">контакты.</h2>
-
-          <a class="logo-device-link" href="##"
+          <div class="footer-logo-wrapper">
+            <a class="logo-device-link" href="##"
             ><img
               class="logo-device-yellow"
               src="images/logo-device-yellow.svg"
@@ -459,12 +456,11 @@
               width="145"
               height="36"
           /></a>
+        </div>
           <address class="footer-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </address>
-        </section>
-        <section class="footer-links">
-          <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
+      <div></div>
           <ul class="footer-menu-list">
             <li class="footer-delivery"><a href="#">Доставка</a></li>
             <li class="footer-garanty"><a href="#">Гарантия</a></li>
@@ -508,23 +504,19 @@
               </a>
             </li>
           </ul>
-        </section>
-
-        <section class="phone-logo">
-          <h2 class="visually-hidden">Номера телефонов.</h2>
           <a class="footer-contacts-phone" href="tel:88128121212"
-            >+7 (812) 812-12-12</a
+            >Тел.: +7 (812) 812-12-12</a
           >
+          <div class="html-logo">
           <a href="https://htmlacademy.ru/"
             ><img
-              class="html-logo"
               src="images/logo-htmlacademy.svg"
               alt="лого HTML Academy"
               width="115"
               height="33"
             />
           </a>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
