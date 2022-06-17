@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header content-wrapper">
-      <h1 class="visually-hidden">Интернет-магазин Device</h1>
+      <h1 class="visually-hidden">Интернет-магазин Device.</h1>
       <div class="header-logo-black">
         <a href="index.html">
           <img
@@ -20,34 +20,25 @@
       </div>
       <div class="navigation-header-container">
         <nav class="navigation-header-user">
-          <ul class="search-navigation-list">
-            <li class="navigation-item">
-              <p class="search-header">
-                <label for="search-catalog"></label>
-                <input
-                  type="search"
-                  id="search-catalog"
-                  name="search-catalog"
-                  placeholder="Текст Поиска"
-                />
-                <input type="submit" value="Найти" />
-              </p>
-            </li>
-          </ul>
+          <form class="search-navigation-form">
+            <label for="search-catalog"><img class="label-img" width="16px" height="16px" src="images/loupe.svg"></label>
+            <input class="input-search"
+              type="search"
+              id="search-catalog"
+              name="search-catalog"
+              placeholder="Текст Поиска"
+            />
+            <input class="button-search" type="submit" value="Найти"/>
+      </form>
           <ul class="navigation-user-list navigation-user">
-            <li class="navigation-user-item">
+            <li class="navigation-user-item user-login">
               <button class="navigation-user-link navigation-button" href="#">
                 <img
                   class="user-icon"
                   src="images/icons-images/icons-user.svg"
                   width="15"
                   height="12"
-                />Коля Петухов
-              </button>
-            </li>
-            <li class="navigation-user-item">
-              <button class="navigation-user-link navigation-button navigation-button-enter" href="#">
-               Выйти
+                />Войти
               </button>
             </li>
             <li class="navigation-user-item">
@@ -111,7 +102,7 @@
         </div>
         <section class="catalog-products">
           <div class="catalog-products-container">
-            <h2 class="visually-hidden">Каталог продукции с фильтрами</h2>
+            <h2 class="visually-hidden">Каталог продукции с фильтрами.</h2>
             <div class="catalog-filter">
               <h3 class="text-filter">ФИЛЬТР:</h3>
               <form
@@ -214,7 +205,7 @@
                   <option value="popular">Популярные</option>
                 </select>
                 <a class="button-sort" href="#">
-                  <span class="visually-hidden">Сортировка Вверх</span>
+                  <span class="visually-hidden">Сортировка Вверх.</span>
                   <img
                     src="images/arrow-filter-up.svg"
                     alt="сортировка вверх"
@@ -223,7 +214,7 @@
                   />
                 </a>
                 <a class="button-sort" href="#">
-                  <span class="visually-hidden">Сортировка Вниз</span>
+                  <span class="visually-hidden">Сортировка Вниз.</span>
                   <img
                     src="images/arrow-filter-down.svg"
                     alt="сортировка вниз"
@@ -243,11 +234,14 @@
                         width="360"
                         height="380"
                       />
-                      <h3 class="product-card-title">
-                        Любительская селфи палка
-                      </h3>
                     </a>
+                    <div class="product-cart-wrapper">
+                        <a class="product-card-title product-card-link" href="product.html">
+                        Любительская селфи палка
+                        </a>
+
                     <span class="product-card-price">500 Р</span>
+                  </div>
                   </li>
 
                   <li class="product-card">
@@ -258,12 +252,12 @@
                         alt="Профессиональная селфи-палка"
                         width="360"
                         height="380"
-                      />
-                      <h3 class="product-card-title">
-                        Профессиональная селфи-палка
-                      </h3>
+                      /></a>
+                      <div class="product-cart-wrapper">
+                    <a class="product-card-title product-card-link" href="product.html">
+                      Профессиональная селфи-палка
                     </a>
-                    <span class="product-card-price">1 500 Р</span>
+                    <span class="product-card-price">1 500 Р</span></div>
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="product.html">
@@ -274,12 +268,15 @@
                         width="360"
                         height="380"
                       />
-                      <h3 class="product-card-title">
-                        Непотопляемая селфи-палка
-                      </h3>
+                    </a>
+                    <div class="product-cart-wrapper">
+                    <a class="product-card-title product-card-link" href="product.html">
+                      Непотопляемая селфи-палка
                     </a>
                     <span class="product-card-price">2 500 Р</span>
+                  </div>
                   </li>
+
                   <li class="product-card">
                     <a class="product-card-link" href="product.html">
                       <img
@@ -289,11 +286,13 @@
                         width="360"
                         height="380"
                       />
-                      <h3 class="product-card-title">
-                        Селфи-палка «Следуй за мной»
-                      </h3>
+                    </a>
+                    <div class="product-cart-wrapper">
+                    <a class="product-card-title product-card-link" href="product.html">
+                      Селфи-палка «Следуй за мной»
                     </a>
                     <span class="product-card-price">1 500 Р</span>
+                  </div>
                   </li>
                 </ul>
                 <button class="download-more" href="#">Загрузить ещё</button>
@@ -333,12 +332,10 @@
         </section>
       </header>
     </main>
-    <footer class="page-footer">
+    <footer class="container-footer">
       <div class="page-footer-container">
-        <section class="footer-address">
-          <h2 class="visually-hidden">контакты</h2>
-
-          <a class="logo-device-link" href="##"
+          <div class="footer-logo-wrapper">
+            <a class="logo-device-link" href="##"
             ><img
               class="logo-device-yellow"
               src="images/logo-device-yellow.svg"
@@ -346,12 +343,11 @@
               width="145"
               height="36"
           /></a>
-          <adress class="footer-text">
+        </div>
+          <address class="footer-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </adress>
-        </section>
-        <section class="footer-links">
-          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+          </address>
+      <div></div>
           <ul class="footer-menu-list">
             <li class="footer-delivery"><a href="#">Доставка</a></li>
             <li class="footer-garanty"><a href="#">Гарантия</a></li>
@@ -366,7 +362,7 @@
                   width="14"
                   height="12"
                 />
-                <span class="visually-hidden">teleram</span>
+                <span class="visually-hidden">teleram.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -378,9 +374,9 @@
                   src="images/icons-images/icons-footer-youtube.svg"
                   alt="лого youtube"
                   width="16"
-                  height="10.67"
+                  height="10"
                 />
-                <span class="visually-hidden">youtube</span>
+                <span class="visually-hidden">youtube.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -391,27 +387,23 @@
                   width="15"
                   height="14"
                 />
-                <span class="visually-hidden">twitter</span>
+                <span class="visually-hidden">twitter.</span>
               </a>
             </li>
           </ul>
-        </section>
-
-        <section class="phone-logo">
-          <h2 class="visually-hidden">Номера телефонов</h2>
           <a class="footer-contacts-phone" href="tel:88128121212"
-            >+7 (812) 812-12-12</a
+            >Тел.: +7 (812) 812-12-12</a
           >
+          <div class="html-logo">
           <a href="https://htmlacademy.ru/"
             ><img
-              class="html-logo"
               src="images/logo-htmlacademy.svg"
               alt="лого HTML Academy"
               width="115"
               height="33"
             />
           </a>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
