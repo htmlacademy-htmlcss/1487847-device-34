@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "^0.1.12"
+  },
+  "dependencies": {
+    "stylelint": "^13.13.1"
+  }
+}
